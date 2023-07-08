@@ -1,14 +1,12 @@
 function solution(my_string) {
-    my_string = my_string.split('');
+    let answer = '';
     
-    for(let i=0; i<my_string.length; i++){
-        if(my_string[i]==my_string[i].toUpperCase())
-            my_string[i]=my_string[i].toLowerCase()
+    for(let c of my_string){
+        if(c==c.toUpperCase())
+            answer+=c.toLowerCase()
         else
-            my_string[i]=my_string[i].toUpperCase()
+            answer+=c.toUpperCase()
     }
     
-    my_string = my_string.join('');
-    
-    return my_string;
+    return answer;
 }
