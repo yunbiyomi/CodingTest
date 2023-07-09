@@ -1,6 +1,4 @@
 function solution(num, k) {
-    if(Array.from(String(num)).findIndex(obj => obj == k)==-1)
-        return -1;
-    else
-        return Array.from(String(num)).findIndex(obj => obj == k)+1;
+    var answer = Array.from(String(num)).findIndex(obj => obj == k);
+    return answer == -1 ? -1 : answer+1;
 }
