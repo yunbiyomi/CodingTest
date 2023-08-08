@@ -8,7 +8,5 @@ function solution(n) {
         }
     }
     
-    answer = [...new Set(answer)];
-
-    return answer;
+    return [...new Set(answer)];
 }
