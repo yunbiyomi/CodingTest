@@ -1,6 +1,4 @@
 function solution(a, b) {
-    let hap = 0;
-    for(let i in a)
-        hap+=a[i]*b[i];
-    return hap;
+    return a.reduce((acc, _, i) => acc += a[i]*b[i], 0);
+    
 }
