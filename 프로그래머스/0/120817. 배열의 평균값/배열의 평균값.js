@@ -3,5 +3,7 @@ function solution(numbers) {
     
     numbers.forEach((number) => hap += number);
     
-    return hap/numbers.length;
+    const answer = hap/numbers.length;
+    
+    return answer;
 }
